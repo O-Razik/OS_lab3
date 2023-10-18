@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\razik\source\repos\find_mfe\main.cpp(27,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\razik\source\repos\find_mfe\main.cpp(27,30): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  find_mfe.vcxproj -> C:\Users\razik\source\repos\find_mfe\x64\Debug\find_mfe.exe
