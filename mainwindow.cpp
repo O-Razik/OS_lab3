@@ -59,7 +59,7 @@ void MainWindow::on_run_button_clicked()
     if (disc)
     {
         processes.push_back(new Process(
-            "C:\\Users\\razik\\AppData\\Local\\Discord\\app-1.0.9018\\Discord.exe")
+            "C:\\Users\\razik\\AppData\\Local\\Discord\\app-1.0.9021\\Discord.exe" )
                             );
     }
     if (msinf)
@@ -71,7 +71,7 @@ void MainWindow::on_run_button_clicked()
     if (mfe)
     {
         processes.push_back(new Process(
-            "C:\\Users\\razik\\source\\repos\\Qt\\os_lab3\\find_mfe\\x64\\Debug\\find_mfe.exe",
+            "C:\\Users\\razik\\source\\repos\\Qt\\os_lab3\\apps_processes\\find_mfe\\x64\\Debug\\find_mfe.exe",
             ui->n->value(), ui->m->value())
                             );
     }
