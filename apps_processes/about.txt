@@ -1,0 +1,2 @@
+func_tab - function tabulation of f(x) = x + sin(x) + sin(x^2) + sin(x^3);
+find_mfe - the process of searching for the most frequently occurring element in a 2d matrix.
