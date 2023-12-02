@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "affinity.h"
+#include "save_result.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -22,6 +23,9 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+QTableWidget *MainWindow::get_table(){
+    return ui->process_view;
+}
 
 void MainWindow::on_func_tab_clicked()
 {
@@ -385,4 +389,11 @@ void MainWindow::context_menu_priority(const QPoint &pos, int row)
         processes[row]->set_priority(REALTIME_PRIORITY_CLASS);
 }
 
+
+
+void MainWindow::on_actionManage_Results_triggered()
+{
+    save_result* window = new save_result(this);
+    window->show();
+}
 

@@ -25,6 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         process.h process.cpp
         affinity.h affinity.cpp affinity.ui
+        save_result.h save_result.cpp save_result.ui
     )
 
 if (WIN32)

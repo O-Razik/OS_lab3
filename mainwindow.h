@@ -7,6 +7,7 @@
 #include <chrono>
 
 #include "process.h"
+#include "qtablewidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,6 +20,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+    QTableWidget *get_table();
 
 private slots:
     void on_run_button_clicked();
@@ -37,6 +40,8 @@ private slots:
 
     void context_menu_table(const QPoint &pos);
     void context_menu_priority(const QPoint &pos, int row);
+
+    void on_actionManage_Results_triggered();
 
 private:
     Ui::MainWindow *ui;
